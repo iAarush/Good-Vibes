@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sign in</title>
-  <link rel="stylesheet" href="signin.css">
- 
+  <link rel="stylesheet" href="sign-in.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 
@@ -15,27 +14,27 @@
 
 <body>
   <header>
-  
+  <div class="dropdown">
+      <button class="dropbtn"> Menu </button>
+      <div class="dropdown-content">
+        <a href="/index.html">Home Page</a>
+        <a href="/chat.html">About</a>
+        <a href="/learning.html">Newsletter</a>
+        <a href="/social.html">Contact Us</a>
+        <a href="/signin.html">Sign In</a>
+      </div>
+    </div>
   </header>
   <div class="Head">
     <p style="visibility: hidden">
       Hello
     </p>
     <h1>
-      Good vibes
+      Good Vibes
     </h1>
     
+    
   </div>
-
-  <div class="dropdown">
-    <button class="dropbtn">Vibe Check</button>
-    <div class="dropdown-content">
-      <a href="index.html">Home Page</a>
-      <a href="chat.html">Chatroom</a>
-      <a href="learning.html">Learn Something New</a>
-      <a href="social.html">Posts</a>   
-</div>
-</div>
 
   <div id="firebaseui-auth-container"></div>
 
@@ -49,37 +48,20 @@
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-      apiKey: "AIzaSyAyiScaWREBR22hhE_RSXjcHToZD5NDkUI",
-      authDomain: "good-vibes-b4fbf.firebaseapp.com",
-      databaseURL: "https://good-vibes-b4fbf.firebaseio.com",
-      projectId: "good-vibes-b4fbf",
-      storageBucket: "good-vibes-b4fbf.appspot.com",
-      messagingSenderId: "1068561122681",
-      appId: "1:1068561122681:web:aaa98fd32fb821ed821ba8",
-      measurementId: "G-RKQ8T9N1MP"
+      apiKey: "AIzaSyC8KMkUOHwpWv8Kd6hMy_1jbB6G5PFsFTk",
+      authDomain: "help-save.firebaseapp.com",
+      databaseURL: "https://help-save.firebaseio.com",
+      projectId: "help-save",
+      storageBucket: "",
+      messagingSenderId: "822494144696",
+      appId: "1:822494144696:web:c98470ede66eda51"
     };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
   </script>
-  <form action="signin.js">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" value="email@email.com"></label><br>
-    <label for="password">Password:</label>
-    <input type="text" id="password" name="password" value="Enter a password with 8 or more characters"></label><br>
-    <input type="submit" value="Submit"> 
-  </form> 
-
- <script src="signin.js"></script>
-
+  <script src="signin.js"></script>
   <footer>
   <div>
 <p class="cr">
-  Copyright ©️ 2019 Good Vibes All Right Reserved.
+  Copyright © 2019 Good Vibes All Right Reserved.
     </p>  
     </div>
   </footer>
