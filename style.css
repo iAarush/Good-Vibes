@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding:0px;
     font-size: 25px;
-    background-image: linear-gradient(white, grey);
+    background-image: linear-gradient(white, #bbbbbb);
     margin-left: 15px;
     margin-right: 15px;
 }
