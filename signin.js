@@ -30,7 +30,7 @@ firebase.auth().onAuthStateChanged(function(user){
 if (user){
   console.log("HIIIIII"); 
   const a = document.createElement("a");
-  a.setAttribute("href", "interactive.html")
+  a.setAttribute("href", "chat.html")
   a.innerText = "Your Log";
   select.append(a)
 }
