@@ -36,26 +36,31 @@
     
   </div>
 
-  <div id="firebaseui-auth-container"></div>
-
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-  <script src="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.css" />
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyC8KMkUOHwpWv8Kd6hMy_1jbB6G5PFsFTk",
-      authDomain: "help-save.firebaseapp.com",
-      databaseURL: "https://help-save.firebaseio.com",
-      projectId: "help-save",
-      storageBucket: "",
-      messagingSenderId: "822494144696",
-      appId: "1:822494144696:web:c98470ede66eda51"
-    };
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8KMkUOHwpWv8Kd6hMy_1jbB6G5PFsFTk",
+    authDomain: "help-save.firebaseapp.com",
+    databaseURL: "https://help-save.firebaseio.com",
+    projectId: "help-save",
+    storageBucket: "help-save.appspot.com",
+    messagingSenderId: "822494144696",
+    appId: "1:822494144696:web:a5c56936727daa8c8d2c4d",
+    measurementId: "G-4ETGNQ9TNX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  
+  
   </script>
   <script src="signin.js"></script>
   <footer>
