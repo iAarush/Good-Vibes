@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sign in</title>
   <link rel="stylesheet" href="signin.css">
-  <script src="signin.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 
@@ -15,68 +14,75 @@
 
 <body>
   <header>
-  
+  <div class="dropdown">
+      <button class="dropbtn"> Vibe Check </button>
+      <div class="dropdown-content">
+        <a href="index.html">Home Page</a>
+        <a href="chat.html">Chatroom</a>
+        <a href="learning.html">Learn Something New</a>
+        <a href="social.html">posts</a>
+        <a href="/signin.html">Sign In</a>
+      </div>
+    </div>
   </header>
   <div class="Head">
     <p style="visibility: hidden">
       Hello
     </p>
     <h1>
-      Good vibes
+      Good Vibes
     </h1>
     
+    
   </div>
-
-  <div class="dropdown">
-    <button class="dropbtn">Vibe Check</button>
-    <div class="dropdown-content">
-      <a href="index.html">Home Page</a>
-      <a href="chat.html">Chatroom</a>
-      <a href="learning.html">Learn Something New</a>
-      <a href="social.html">Posts</a>   
-</div>
-</div>
 
   <div id="firebaseui-auth-container"></div>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-  <script src="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.css" />
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyAyiScaWREBR22hhE_RSXjcHToZD5NDkUI",
-      authDomain: "good-vibes-b4fbf.firebaseapp.com",
-      databaseURL: "https://good-vibes-b4fbf.firebaseio.com",
-      projectId: "good-vibes-b4fbf",
-      storageBucket: "good-vibes-b4fbf.appspot.com",
-      messagingSenderId: "1068561122681",
-      appId: "1:1068561122681:web:aaa98fd32fb821ed821ba8",
-      measurementId: "G-RKQ8T9N1MP"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-  </script>
-  <form action="signin.js">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" value="email@email.com"></label><br>
-    <label for="password">Password:</label>
-    <input type="text" id="password" name="password" value="Enter a password with 8 or more characters"></label><br>
-    <input type="submit" value="Submit"> 
-  </form> 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD9Jr2gUkJYt1gpQUEiFLym156XsP6mo98",
+    authDomain: "good-vibes-d1795.firebaseapp.com",
+    databaseURL: "https://good-vibes-d1795.firebaseio.com",
+    projectId: "good-vibes-d1795",
+    storageBucket: "good-vibes-d1795.appspot.com",
+    messagingSenderId: "198581835256",
+    appId: "1:198581835256:web:fc0cea50ab9c9fc8a3320d",
+    measurementId: "G-SSNB4XG4KC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  
+<script> 
+const firebaseConfig = {
+  apiKey: "AIzaSyD9Jr2gUkJYt1gpQUEiFLym156XsP6mo98",
+  authDomain: "good-vibes-d1795.firebaseapp.com",
+  databaseURL: "https://good-vibes-d1795.firebaseio.com",
+  projectId: "good-vibes-d1795",
+  storageBucket: "good-vibes-d1795.appspot.com",
+  messagingSenderId: "198581835256",
+  appId: "1:198581835256:web:fc0cea50ab9c9fc8a3320d",
+  measurementId: "G-SSNB4XG4KC"
+};
+ </script>
+  
+  
+  
+  
+  <script src="signin.js"></script>
   <footer>
   <div>
 <p class="cr">
-  Copyright ©️ 2019 Good Vibes All Right Reserved.
+  Copyright © 2019 Good Vibes All Right Reserved.
     </p>  
     </div>
   </footer>
