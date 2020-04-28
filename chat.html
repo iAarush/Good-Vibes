@@ -121,6 +121,29 @@
 
 
 <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAyiScaWREBR22hhE_RSXjcHToZD5NDkUI",
+    authDomain: "good-vibes-b4fbf.firebaseapp.com",
+    databaseURL: "https://good-vibes-b4fbf.firebaseio.com",
+    projectId: "good-vibes-b4fbf",
+    storageBucket: "good-vibes-b4fbf.appspot.com",
+    messagingSenderId: "1068561122681",
+    appId: "1:1068561122681:web:aaa98fd32fb821ed821ba8",
+    measurementId: "G-RKQ8T9N1MP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 <h1>Add a Discussion</h1>
 
 <div class="dropdown">
