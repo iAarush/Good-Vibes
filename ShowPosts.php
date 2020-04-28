@@ -1,3 +1,17 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyAp4slGWUhcmW4yPpzxs29Kcc_AU2bj3D0",
+    authDomain: "firemessage-823ff.firebaseapp.com",
+    databaseURL: "https://firemessage-823ff.firebaseio.com",
+    projectId: "firemessage-823ff",
+    storageBucket: "firemessage-823ff.appspot.com",
+    messagingSenderId: "397740607887",
+    appId: "1:397740607887:web:513a656215f08c20"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
 <?php
 //check for required info from the query string
 if (!$_GET[topic_id]) {
