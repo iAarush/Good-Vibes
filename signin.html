@@ -1,15 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="signin.css">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>  
- 
-  
-<title>Add a Discussion</title>
-</head>
+<link rel="stylesheet" href="accountsetting.css">
+<script src="accountsetting.js" defer></script>
+<html>
+ <head>
+   <link rel="shortcut icon" href="https://sneakernews.com/wp-content/uploads/2018/09/jordan-1-court-purple-where-to-buy-5.jpg" type="image/x-icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+   <!-- Add Firebase products that you want to use -->
+   <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+   <script>
+       // Your web app's Firebase configuration
+       var firebaseConfig = {
+    apiKey: "AIzaSyD9Jr2gUkJYt1gpQUEiFLym156XsP6mo98",
+    authDomain: "good-vibes-d1795.firebaseapp.com",
+    databaseURL: "https://good-vibes-d1795.firebaseio.com",
+    projectId: "good-vibes-d1795",
+    storageBucket: "good-vibes-d1795.appspot.com",
+    messagingSenderId: "198581835256",
+    appId: "1:198581835256:web:fc0cea50ab9c9fc8a3320d",
+    measurementId: "G-SSNB4XG4KC"
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+     </script>
+(128 kB)
+<style>
+input[type=text] {
+ width: 250px;
+ box-sizing: border-box;
+ border: 2px solid #ccc;
+ border-radius: 4px;
+ font-size: 16px;
+ background-color: white;
+ background-position: 10px 10px;
+ background-repeat: no-repeat;
+ padding: 12px 20px 12px 40px;
+ -webkit-transition: width 0.4s ease-in-out;
+ transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+ width: 100%;
+}
+</style>
+ </head>
+<body>
+<h2>Accounts</h2>
+<form action="homepage.html">
+ <br>
+ <input id="nikeusername" type="text" name="username">
+ <br>
+ Password:<br>
+ <input id="nikepassword" type="text" name="password">
+ <br><br>
+</form>
+<br><br>
+<form action="homepage.html">
+ <button onclick="writeData()">Save</button>
+ <button type="submit" id="home">Home</button>
+</form>
+<script>
+   firebase.auth().onAuthStateChanged(function(user){
+     // if user is logged in
+   if (user){
+       console.log(user.uid);
+       firebase.database().ref(user.uid).on('value', function(data){
+       console.log(data.val());
+       document.getElementById('nikeusername').value = data.val().NikeUsername
+       document.getElementById('nikepassword').value = data.val().NikePassword
+     
+     })
+   }
+})
+
+function writeData(){
+     event.preventDefault();
+   if (usr){
+     firebase.database().ref(usr.uid).set({
+         NikeUsername: document.getElementById("nikeusername").value,
+         NikePassword: document.getElementById("nikepassword").value,
+      
+     });
+       console.log(usr.uid)
+   }
+     }
+ </script>
+</body>
 </html>
