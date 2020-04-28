@@ -1,8 +1,43 @@
 <?php
 //connect to server and select database; we'll need it soon
-$conn = mysql_connect("localhost", "joeuser", "somepass")
-or die(mysql_error());
-mysql_select_db("testDB",$conn) or die(mysql_error());
+!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatroom</title>
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <!--PASTE SNIPPET HERE-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+
+
+
+<!-- <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<!--
+    
+    
+    
+    <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAp4slGWUhcmW4yPpzxs29Kcc_AU2bj3D0",
+    authDomain: "firemessage-823ff.firebaseapp.com",
+    databaseURL: "https://firemessage-823ff.firebaseio.com",
+    projectId: "firemessage-823ff",
+    storageBucket: "firemessage-823ff.appspot.com",
+    messagingSenderId: "397740607887",
+    appId: "1:397740607887:web:513a656215f08c20"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
 //check to see if we're showing the form or adding the post
 if ($_POST[op] != "addpost") {
