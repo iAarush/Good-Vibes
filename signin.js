@@ -41,9 +41,19 @@ firebase.auth().onAuthStateChanged(function(user){
 if (user){
   console.log("HIIIIII"); 
   const a = document.createElement("a");
+  const b = document.createElement("a")
+  const c = document.createElement("a")
+  c.setAttribute("href", "games.html")
+    c. innerText = "Play Games" 
+  b.setAttribute("href", "social.html")
+  b.innerText = "Posts"
   a.setAttribute("href", "chat.html")
-  a.innerText = "Your Log";
+  a.innerText = "Chatroom";
+   
   select.append(a)
+  select.append(b)
+  select.append(c)
+   
 }
 })
   
