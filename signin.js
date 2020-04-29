@@ -1,5 +1,5 @@
 const select = document.querySelector(".dropdown-content")
-<script>
+
     // Your web app's Firebase configuration
    var firebaseConfig = {
     apiKey: "AIzaSyCcPGgok1Ao0NCQRsixOQ4Bhf3BTapLb_4",
@@ -10,7 +10,6 @@ const select = document.querySelector(".dropdown-content")
     messagingSenderId: "408116991751",
     appId: "1:408116991751:web:1a826b2d767f4e7cb857a2"
   };
-  </script>
 
 firebase.initializeApp(firebaseConfig);
 var uiConfig = {
