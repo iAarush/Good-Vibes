@@ -1,14 +1,14 @@
 const select = document.querySelector(".dropdown-content")
-const firebaseConfig = {
-  apiKey: "AIzaSyAyiScaWREBR22hhE_RSXjcHToZD5NDkUI",
-  authDomain: "good-vibes-b4fbf.firebaseapp.com",
-  databaseURL: "https://good-vibes-b4fbf.firebaseio.com",
-  projectId: "good-vibes-b4fbf",
-  storageBucket: "good-vibes-b4fbf.appspot.com",
-  messagingSenderId: "1068561122681",
-  appId: "1:1068561122681:web:aaa98fd32fb821ed821ba8",
-  measurementId: "G-RKQ8T9N1MP"
-};
+    // Your web app's Firebase configuration
+   var firebaseConfig = {
+    apiKey: "AIzaSyCcPGgok1Ao0NCQRsixOQ4Bhf3BTapLb_4",
+    authDomain: "fire-vibes.firebaseapp.com",
+    databaseURL: "https://fire-vibes.firebaseio.com",
+    projectId: "fire-vibes",
+    storageBucket: "fire-vibes.appspot.com",
+    messagingSenderId: "408116991751",
+    appId: "1:408116991751:web:1a826b2d767f4e7cb857a2"
+  };
 
 firebase.initializeApp(firebaseConfig);
 var uiConfig = {
