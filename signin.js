@@ -1,5 +1,4 @@
 const select = document.querySelector(".dropdown-content")
-
     // Your web app's Firebase configuration
    var firebaseConfig = {
     apiKey: "AIzaSyCcPGgok1Ao0NCQRsixOQ4Bhf3BTapLb_4",
