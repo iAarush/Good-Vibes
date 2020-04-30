@@ -41,9 +41,9 @@ firebase.auth().onAuthStateChanged(function(user){
 if (user){
   console.log("HIIIIII"); 
   const a = document.createElement("a");
-  const b = document.createElement("a")
-  const c = document.createElement("a")
-  const d = document.createElement("a")
+  const b = document.createElement("a");
+  const c = document.createElement("a");
+  const d = document.createElement("a");
    d.setAttribute("href", "leaning.html")
     d. innerText = "learn something new" 
   c.setAttribute("href", "games.html")
