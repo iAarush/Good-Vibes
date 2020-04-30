@@ -44,7 +44,7 @@ if (user){
   const b = document.createElement("a");
   const c = document.createElement("a");
   const d = document.createElement("a");
-   d.setAttribute("href", "leaning.html")
+   d.setAttribute("href", "learning.html")
     d. innerText = "learn something new" 
   c.setAttribute("href", "games.html")
     c. innerText = "Play Games" 
